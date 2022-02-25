@@ -35,9 +35,6 @@ const useStyles = makeStyles((theme) => ({
 export default function TransitionsModal({ children, media_type, id, data }) {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
-  const [content, setContent] = useState();
-  const [video, setVideo] = useState();
-
   const handleOpen = () => {
     setOpen(true);
   };
@@ -46,28 +43,9 @@ export default function TransitionsModal({ children, media_type, id, data }) {
     setOpen(false);
   };
 
-  const fetchData = async () => {
-    const { data } = await axios.get(
-      `https://api.themoviedb.org/3/${media_type}/${id}?api_key=2202298c737609e42a973f3742724ff2&language=en-US`
-    );
-    // fetch(jsonconvert).then(Response=>Response.json()).then((data)=>{
-    //   setContent(data);
-    // })
-    setContent(data);
-    console.log(data);
-  };
 
-  const fetchVideo = async () => {
-    const { data } = await axios.get(
-      `https://api.themoviedb.org/3/${media_type}/${id}/videos?api_key=2202298c737609e42a973f3742724ff2&language=en-US`
-    );
-
-    setVideo(data.results[0]?.key);
-  };
 
   useEffect(() => {
-    fetchData();
-    fetchVideo();
     // eslint-disable-next-line
   }, []);
 
@@ -93,7 +71,10 @@ export default function TransitionsModal({ children, media_type, id, data }) {
           timeout: 500,
         }}
       >
-        <div className="modal-content">
+        <div class="modal-content">
+          <div class="modal-img">
+            <img src={data.eventImg}/>
+          </div>
           <ul>
             <li>eventName: {data.eventName}</li>
             <li>description: {data.description}</li>

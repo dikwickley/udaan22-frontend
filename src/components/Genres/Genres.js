@@ -2,43 +2,59 @@ import { Chip } from "@material-ui/core";
 import axios from "axios";
 import { useEffect } from "react";
 
-const Genres = ({
-  selectedGenres,
-  setSelectedGenres,
-  genres,
-  setGenres,
-  type,
-  setPage,
-}) => {
+const Genres = ({ selectedGenres, setSelectedGenres, genres, setGenres, content, setFiltredstate,setFiltredData, filterData}) => {
   const handleAdd = (genre) => {
-    setSelectedGenres([...selectedGenres, genre]);
+    setSelectedGenres(()=>{console.log("fngkrng");return [...selectedGenres, genre]});
     setGenres(genres.filter((g) => g.id !== genre.id));
-    setPage(1);
+    setFiltredstate(true);
+    var filtereddata = filterData;
+    content.map((c) => {
+      if(c.department === genre.name){
+        filtereddata.push(c);
+      }
+    })
+    setFiltredData(filtereddata);
   };
 
   const handleRemove = (genre) => {
-    setSelectedGenres(
-      selectedGenres.filter((selected) => selected.id !== genre.id)
-    );
-    setGenres([...genres, genre]);
-    setPage(1);
+      setSelectedGenres(selectedGenres.filter((selected) => selected.id !== genre.id));
+      setGenres([...genres, genre]);    
+    // this is added new
+      setFiltredstate(true);
+      setFiltredData(filterData.filter((c) => c.department !== genre.name));
+      if(selectedGenres.length === 1){
+        setFiltredstate(false);
+        setFiltredData([]);
+      }
   };
 
   const fetchGenres = async () => {
-    const { data } = await axios.get(
-      `https://api.themoviedb.org/3/genre/${type}/list?api_key=2202298c737609e42a973f3742724ff2&language=en-US`
-    );
-    setGenres(data.genres);
+    setGenres([{
+      id : 2,
+      name : "Non-tech"
+    },{
+      id : 3,
+      name : "Computer"
+    },{
+      id : 4,
+      name : "It"
+    },{
+      id : 5,
+      name : "Mech"
+    },{
+      id : 7,
+      name : "Cultural"
+    },{
+      id : 6,
+      name : "Production"
+    },{
+      id : 8,
+      name : "Civil"
+    }]);
   };
-
   useEffect(() => {
     fetchGenres();
-
-    return () => {
-      setGenres({}); // unmounting
-    };
-    // eslint-disable-next-line
-  }, []);
+  },[]);
 
   return (
     <div style={{ padding: "6px 0" }}>

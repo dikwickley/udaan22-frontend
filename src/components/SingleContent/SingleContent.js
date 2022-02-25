@@ -11,8 +11,8 @@ const SingleContent = ({
   date,
   media_type,
   vote_average,
-
 }) => {
+  console.log()
   return (
     <ContentModal data={data} media_type={media_type} id={id}>
       <Badge   

@@ -11,7 +11,7 @@
     "r2": "pen-paper-test",
     "r3": "buzzer-round",
     "rate": 100,
-    "eventImg": "url",
+    "eventImg": "https://picsum.photos/200/300",
     "co1": "abc", 
     "co2": "pqr"
   },
