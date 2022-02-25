@@ -92,9 +92,10 @@
 
 .modal-content{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  height: 80vh;
+  background-color: blue;
+  height: 50vh;
   width: 80vw;
 }

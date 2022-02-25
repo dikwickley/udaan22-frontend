@@ -95,7 +95,6 @@ export default function TransitionsModal({ children, media_type, id, data }) {
       >
         <div className="modal-content">
           <ul>
-            
             <li>eventName: {data.eventName}</li>
             <li>description: {data.description}</li>
             <li>tagline: {data.tagline}</li>
@@ -106,11 +105,11 @@ export default function TransitionsModal({ children, media_type, id, data }) {
             <li>r2: {data.r2}</li>
             <li>r3: {data.r3}</li>
             <li>rate: {data.rate}</li>
-            <li>eventImg: <img src={data.eventImg} /></li>
             <li>co1: {data.co1}</li>
             <li>co2: {data.co2}</li>
           </ul>
-        </div>
+          </div>
+    
       </Modal>
     </>
   );
