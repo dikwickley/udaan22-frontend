@@ -70,7 +70,7 @@ const Movies = () => {
         {convertjson && !filteredstate &&
           convertjson.map((c) => {
             return <SingleContent
-                data={c}
+                data={c}               
                 key={c.id}
                 id={c.id}
                 poster={c.eventImg}

@@ -4,16 +4,16 @@ import udaan from "./images/udaann.png";
 const Header = () => {
   return (
     <span onClick={() => window.scroll(0, 0)} className="header">
-      <div className="bvmlogo">
+      {/* <div className="bvmlogo">
         <img src={url} />
-      </div>
+      </div> */}
       {/* <div className="tag">Udaan'22</div> */}
       <div className="udann">
         <img src={udaan}></img>
       </div>
-      <div className="udaanlogo">
+      {/* <div className="udaanlogo">
         <img src={url} />
-      </div>
+      </div> */}
     </span>
   );
 };

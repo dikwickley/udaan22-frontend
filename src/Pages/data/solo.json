@@ -1,7 +1,7 @@
 [
   {
-    "Id": "1",
-    "eventName": "coding chefs",
+    "Id": "1",  
+    "eventName": "coding chefs", 
     "description": "basic c/c++ coding",
     "tagline": "chef is cooking some delicious code",
     "department": "computer",

@@ -17,7 +17,7 @@ function App() {
           <Switch>
             <Route path="/" component={Trending} exact />
             <Route path="/movies" component={Movies} />
-            <Route path="/series" component={Series} />
+            {/* <Route path="/series" component={Series} /> */}
             <Route path="/search" component={Search} />
           </Switch>
         </Container>
