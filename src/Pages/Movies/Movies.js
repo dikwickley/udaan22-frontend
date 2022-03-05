@@ -3,7 +3,9 @@ import { useEffect, useState } from "react";
 import Genres from "../../components/Genres/Genres";
 import SingleContent from "../../components/SingleContent/SingleContent";
 import useGenre from "../../hooks/useGenre";
-import convertjson from  "../data/jsonconvert.json";
+import convertjson from  "../data/group.json";
+import '../container.css'
+
 
 const Movies = () => {
   const [genres, setGenres] = useState([]);
@@ -19,10 +21,14 @@ const Movies = () => {
     console.log("fetch called...")
     window.scroll(0, 0);
   },[]);
-
+  console.log(convertjson)
   return (
     <div>
-      <span className="pageTitle">Events </span>
+      <div className="pageTitle">
+          <span style={{color:"#8B0000"}} >GROUP </span>
+          <span style={{color:"rgb(63, 48, 113)"}} > EVENTS</span>
+      </div>
+     
       <Genres
         type="movie"
         selectedGenres={selectedGenres}
@@ -36,7 +42,7 @@ const Movies = () => {
         setFiltredData={setFilterData}
         filterData = {filterData}
       />
-      <div className="trending">
+      <div className="Container">
         {convertjson && !filteredstate &&
           convertjson.map((c) => {
             return <SingleContent
@@ -47,6 +53,7 @@ const Movies = () => {
                 title={c.eventName || c.name}
                 date={c.first_air_date || c.release_date}
                 media_type={c.type}
+                department={c.department}
                 vote_average={c.vote_average}
             />
         })}
@@ -60,6 +67,7 @@ const Movies = () => {
                   title={c.eventName || c.name}
                   date={c.first_air_date || c.release_date}
                   media_type={c.type}
+                  department={c.department}
                   vote_average={c.vote_average}
             />
           ))}

@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Genres from "../../components/Genres/Genres";
-import CustomPagination from "../../components/Pagination/CustomPagination";
 import SingleContent from "../../components/SingleContent/SingleContent";
 import useGenre from "../../hooks/useGenre";
 
@@ -29,7 +28,7 @@ const Series = () => {
   }, [genreforURL, page]);
 
   return (
-    <div>
+    <div className="container">
       <span className="pageTitle">Discover Series</span>
       <Genres
         type="tv"
@@ -53,9 +52,6 @@ const Series = () => {
             />
           ))}
       </div>
-      {numOfPages > 1 && (
-        <CustomPagination setPage={setPage} numOfPages={numOfPages} />
-      )}
     </div>
   );
 };

@@ -1,0 +1,35 @@
+[
+    {
+      "Id": 1,
+      "eventName": "meme-minati",
+      "description": "hello",
+      "tagline": "zindagi",
+      "noOfRounds": 3,
+      "noOfParticipants": 2,
+      "type": "non-tech",
+      "r1": "quiz",         
+      "r2": "pen-paper-test",
+      "r3": "buzzer-round",
+      "rate": 100,
+      "eventImg": "url",
+      "co1": "abc",
+      "co2": "pqr"
+    },
+    {  
+      "Id": 2,
+      "eventName": "helloworld",
+      "description": "programming",
+      "tagline": "zindagi",
+      "noOfRounds": 3,
+      "noOfParticipants": 2,
+      "type": "non-tech",
+      "r1": "quiz",
+      "r2": "NULL",
+      "r3": "NULL",
+      "rate": 100,
+      "eventImg": "url",
+      "co1": "abc",
+      "co2": "pqr"
+    }
+  ]
+  

@@ -5,7 +5,8 @@ import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 import TvIcon from "@material-ui/icons/Tv";
 import MovieIcon from "@material-ui/icons/Movie";
 import SearchIcon from "@material-ui/icons/Search";
-import WhatshotIcon from "@material-ui/icons/Whatshot";
+import GroupIcon from '@material-ui/icons/Group';
+import PersonIcon from '@material-ui/icons/Person'
 import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles({
@@ -13,8 +14,10 @@ const useStyles = makeStyles({
     width: "100%",
     position: "fixed",
     bottom: 0,
-    backgroundColor: "#2d313a",
+    backgroundColor:"#B4161B",
     zIndex: 100,
+    paddingTop:"5px",
+    lineHeight:"20px",
   },
 });
 
@@ -45,22 +48,22 @@ export default function SimpleBottomNavigation() {
       className={classes.root}
     >
       <BottomNavigationAction
-        style={{ color: "white" }}
-        label="Trending"
-        icon={<WhatshotIcon />}
+        style={{ color:"black" }}
+        label="Solo"
+        icon={<PersonIcon />}
       />
       <BottomNavigationAction
-        style={{ color: "white" }}
-        label="Movies"
-        icon={<MovieIcon />}
+        style={{ color:"black" }}
+        label="Group"
+        icon={<GroupIcon />}
       />
       <BottomNavigationAction
-        style={{ color: "white" }}
+        style={{ color:"black" }}
         label="TV Series"
         icon={<TvIcon />}
       />
       <BottomNavigationAction
-        style={{ color: "white" }}
+        style={{ color:"black" }}
         label="Search"
         icon={<SearchIcon />}
       />

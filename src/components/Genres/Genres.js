@@ -4,15 +4,17 @@ import { useEffect } from "react";
 
 const Genres = ({ selectedGenres, setSelectedGenres, genres, setGenres, content, setFiltredstate,setFiltredData, filterData}) => {
   const handleAdd = (genre) => {
-    setSelectedGenres(()=>{console.log("fngkrng");return [...selectedGenres, genre]});
+    console.log(genre)
+    setSelectedGenres(()=>{return [...selectedGenres, genre]});
     setGenres(genres.filter((g) => g.id !== genre.id));
     setFiltredstate(true);
     var filtereddata = filterData;
     content.map((c) => {
-      if(c.department === genre.name){
-        filtereddata.push(c);
-      }
-    })
+      let dep=c.department.split('-');
+      dep.forEach(element => {
+        if(element===genre.name && !filterData.includes(c))filtereddata.push(c);
+      })
+      })
     setFiltredData(filtereddata);
   };
 
@@ -21,7 +23,22 @@ const Genres = ({ selectedGenres, setSelectedGenres, genres, setGenres, content,
       setGenres([...genres, genre]);    
     // this is added new
       setFiltredstate(true);
-      setFiltredData(filterData.filter((c) => c.department !== genre.name));
+      setFiltredData(filterData.filter((c) => { 
+        let dep=c.department.split('-');
+        let flag=false;
+        console.log("newitem")
+        dep.forEach(item=>{
+          if(item===genre.name){
+
+          }
+          else if(selectedGenres.find(g=>g.name === item)!==undefined){
+            console.log(item);
+            flag=true;
+          }
+        })
+        return flag;
+      })
+      );
       if(selectedGenres.length === 1){
         setFiltredstate(false);
         setFiltredData([]);
@@ -31,7 +48,7 @@ const Genres = ({ selectedGenres, setSelectedGenres, genres, setGenres, content,
   const fetchGenres = async () => {
     setGenres([{
       id : 2,
-      name : "Non-tech"
+      name : "Non tech"
     },{
       id : 3,
       name : "Computer"
@@ -50,14 +67,24 @@ const Genres = ({ selectedGenres, setSelectedGenres, genres, setGenres, content,
     },{
       id : 8,
       name : "Civil"
-    }]);
+    },{
+      id : 9,
+      name : "EL"
+    },{
+      id : 10,
+      name : "EC"
+    },
+  
+  
+  ]);
   };
   useEffect(() => {
     fetchGenres();
   },[]);
 
   return (
-    <div style={{ padding: "6px 0" }}>
+    <div style={{ padding: "6px 0",color:"black" }}>
+      Filter By : 
       {selectedGenres.map((genre) => (
         <Chip
           style={{ margin: 2 }}

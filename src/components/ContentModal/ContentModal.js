@@ -2,18 +2,8 @@ import React, { useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
-import Fade from "@material-ui/core/Fade";
-import axios from "axios";
-import {
-  img_500,
-  unavailable,
-  unavailableLandscape,
-} from "../../config/config";
 import "./ContentModal.css";
-import { Button } from "@material-ui/core";
-import YouTubeIcon from "@material-ui/icons/YouTube";
-import Carousel from "../Carousel/Carousel";
-import jsonconvert from "../data/jsonconvert.json";
+
 const useStyles = makeStyles((theme) => ({
   modal: {
     display: "flex",
@@ -23,8 +13,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     width: "90%",
     height: "80%",
-    backgroundColor: "#39445a",
-    border: "1px solid #282c34",
+    backgroundColor: "#0D0D0D",
     borderRadius: 10,
     color: "white",
     boxShadow: theme.shadows[5],
@@ -43,10 +32,7 @@ export default function TransitionsModal({ children, media_type, id, data }) {
     setOpen(false);
   };
 
-
-
   useEffect(() => {
-    // eslint-disable-next-line
   }, []);
 
   return (
@@ -71,9 +57,35 @@ export default function TransitionsModal({ children, media_type, id, data }) {
           timeout: 500,
         }}
       >
-        <div class="modal-content">
+        <div className="event">
+          <div className="event-img">
+            <img
+              src={data.eventImg}
+              style={{width:"300px",height:"200px"}}
+            />
+          </div>
+          <div className="event-description">
+            <ul class="list-group bg-dark-c scrollar ">
+              <li class="list-group-item  bg-dark-c text-white m-1">Event : {data.eventName}</li>
+              <li class="list-group-item  bg-dark-c text-white m-1">Description : {data.description}</li>
+              <li class="list-group-item  bg-dark-c text-white m-1">Tagline : {data.tagline}</li>
+              <li class="list-group-item  bg-dark-c text-white m-1">No. of Rounds: {data.noOfRounds}</li>
+              <li class="list-group-item  bg-dark-c text-white m-1">Type: {data.type}</li>
+              <li class="list-group-item  bg-dark-c text-white m-1">Event : {data.eventName}</li>
+              <li class="list-group-item  bg-dark-c text-white m-1">Description : {data.description}</li>
+              <li class="list-group-item  bg-dark-c text-white m-1">Tagline : {data.tagline}</li>
+              <li class="list-group-item  bg-dark-c text-white m-1">No. of Rounds: {data.noOfRounds}</li>
+              <li class="list-group-item  bg-dark-c text-white m-1">Type: {data.type}</li>
+            </ul>
+          </div>
+          
+        </div>
+        {/* <div class="modal-content">
           <div class="modal-img">
-            <img src={data.eventImg}/>
+            <img
+              src={data.eventImg}
+              style={{ maxHeight: "60%", maxWidth: "60%" }}
+            />
           </div>
           <ul>
             <li>eventName: {data.eventName}</li>
@@ -88,9 +100,8 @@ export default function TransitionsModal({ children, media_type, id, data }) {
             <li>rate: {data.rate}</li>
             <li>co1: {data.co1}</li>
             <li>co2: {data.co2}</li>
-          </ul>
-          </div>
-    
+          </ul> 
+        </div> */}
       </Modal>
     </>
   );

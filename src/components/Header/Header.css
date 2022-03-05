@@ -1,22 +1,89 @@
-.header {
+.header {                                       
   width: 100%;
+  height: 130px;
   cursor: pointer;
   position: fixed;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   text-transform: uppercase;
-  background-color: #39445a;
   font-family: "Montserrat", sans-serif;
   font-size: 5vw;
-  padding-bottom: 15px;
-  box-shadow: 0px 1px 5px black;
+  padding-bottom: 0px;
   color: white;
   z-index: 100;
-}
+  top:0;  
+  box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+  background-color: #000000d6;
+}  
+.tag{
+  font-weight: bolder; 
+}  
+.header div img{  
+  height: 59px;
+  width: 72px;   
+} 
 
+.header .udann img{
+  width: 351px;
+    height: 98px;
+} 
 @media (max-width: 1000px) {
   .header {
-    padding-top: 15px;
-    font-size: 6.4vw;
+    padding-top: 17px; 
+    font-size: 6.4vw; 
   }
+  
+}
+@media (min-width:914px) {
+    .header .bvmlogo,
+    .header .udaanlogo{
+      margin-top: 19px;
+    }
+}
+/* design for udaan logo   */
+@media (min-width:1011px) {
+  .header .udann{
+    margin-top: 12px;
+  }
+}
+/* additionanl */
+@media (max-width: 679px) {
+  .header .udann img{
+    width: 282px;
+    height: 80px;    
+  }
+   .header{
+     padding-bottom: 12px;
+   }
+   .tag{
+    padding-top: 12px;
+  }
+  .header .bvmlogo,
+  .header .udaanlogo{
+       margin-top: 3px;
+  }
+}
+
+@media (max-width:500px) {
+  .header{
+    padding-top:19px;
+    font-size: 8.4vw;
+  }
+  .header div img{
+    height: 54px;
+    width: 63px; 
+  }
+  .header .udann img{
+    width: 213px;
+    height: 85px;  
+  }
+  .udann{
+    margin-top: -11px;
+  }
+}
+@media (max-width:388px) {
+  .header .udann img {
+    width: 194px;
+    height: 72px;
+}
 }

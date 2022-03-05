@@ -1,5 +1,4 @@
 import { Badge } from "@material-ui/core";
-import { img_300, unavailable } from "../../config/config";
 import "./SingleContent.css";
 import ContentModal from "../ContentModal/ContentModal";
 
@@ -10,6 +9,7 @@ const SingleContent = ({
   title,
   date,
   media_type,
+  department,
   vote_average,
 }) => {
   console.log()
@@ -24,12 +24,11 @@ const SingleContent = ({
         // src={poster ? `${img_300}${poster}` : unavailable}
         src={poster}
         alt={title}
+        style={{width:"300px",height:"300px"}}
       />
-      <b className="title">{title}</b>
-      <span className="subTitle">
-        {media_type === "tv" ? "TV Series" : "Movie"}
-        <span className="subTitle">{date}</span>
-      </span>
+      <span className="title">{title}</span>
+      <span className="subTitle" >{department}</span>
+      <span className="subTitle"></span>
     </ContentModal>
   );
 };
