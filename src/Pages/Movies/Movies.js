@@ -45,11 +45,15 @@ const Movies = () => {
       <div className="Container">
         {convertjson && !filteredstate &&
           convertjson.map((c) => {
+         
             return <SingleContent
                 data={c}
                 key={c.id}
                 id={c.id}
                 poster={c.eventImg}
+               
+                
+                
                 title={c.eventName || c.name}
                 date={c.first_air_date || c.release_date}
                 media_type={c.type}

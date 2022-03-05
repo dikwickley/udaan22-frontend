@@ -6,14 +6,14 @@
           "tagline": "‘Link to the Linkage’",
           "noOfRounds": "3",
           "noOfParticipants": "2",
-          "department": "mech-pro",
+          "department": "Mech-Production",
           "type": "tech",
           "r1": "quiz",
           "r2": "treasurehunt",
           "r3": "Construct",
           "rate": "35",
           "venue": "C block",
-          "eventImg": "url",
+          "eventImg": "./images/Mech-Production/Caza El Enlace.jpg",
           "co1": "abc",
           "co2": "pqr"
       },
@@ -31,7 +31,7 @@
           "r3": "Product-Marketing",
           "rate": "35",
           "venue": "C block-Auditorium",
-          "eventImg": "url",
+          "eventImg": "./images/Mech-Production/Mecha Pitchers.jpg",
           "co1": "abc",
           "co2": "pqr"
       },
@@ -49,7 +49,7 @@
           "r3": "Warehousing",
           "rate": "35",
           "venue": "C block-CAD Lab",
-          "eventImg": "url"
+          "eventImg": "./images/Mech-Production/Mecha-Voyage.jpg"
       },
       {
           "Id": "4",
@@ -65,7 +65,7 @@
           "r3": "(optional)",
           "rate": "35",
           "venue": "D block-CAD Lab-Workshop",
-          "eventImg": "url"
+          "eventImg": "./images/Mech-Production/Parametric.jpg"
       },
       {
           "Id": "5",
@@ -110,10 +110,10 @@
           "type": "tech",
           "r1": "NULL",
           "r2": "NULL",
-          "r3": "NULL",
+          "r3": "NULL", 
           "rate": "NULL",
           "venue": "NULL",
-          "eventImg": "url"
+          "eventImg": "./images/Civil/Green Concrete Cube Test.jpg"
       },
       {
           "Id": "8",
@@ -129,7 +129,7 @@
           "r3": "NULL",
           "rate": "NULL",
           "venue": "NULL",
-          "eventImg": "url"
+          "eventImg": "./images/Civil/Survey Maestro.jpg"
       },
       {
           "Id": "9",

@@ -71,11 +71,12 @@ export default function TransitionsModal({ children, media_type, id, data }) {
               <li class="list-group-item  bg-dark-c text-white m-1">Tagline : {data.tagline}</li>
               <li class="list-group-item  bg-dark-c text-white m-1">No. of Rounds: {data.noOfRounds}</li>
               <li class="list-group-item  bg-dark-c text-white m-1">Type: {data.type}</li>
-              <li class="list-group-item  bg-dark-c text-white m-1">Event : {data.eventName}</li>
-              <li class="list-group-item  bg-dark-c text-white m-1">Description : {data.description}</li>
-              <li class="list-group-item  bg-dark-c text-white m-1">Tagline : {data.tagline}</li>
-              <li class="list-group-item  bg-dark-c text-white m-1">No. of Rounds: {data.noOfRounds}</li>
-              <li class="list-group-item  bg-dark-c text-white m-1">Type: {data.type}</li>
+
+              <li class="list-group-item  bg-dark-c text-white m-1">No. of Participants : {data.noOfParticipants}</li>
+              <li class="list-group-item  bg-dark-c text-white m-1">Round 1 : {data.rd1}</li>
+              <li class="list-group-item  bg-dark-c text-white m-1">Round 2 : {data.rd2}</li>
+              <li class="list-group-item  bg-dark-c text-white m-1">Round 3: {data.rd3}</li>
+              <li class="list-group-item  bg-dark-c text-white m-1">Rate: {data.rate} Rupees</li>
             </ul>
           </div>
           

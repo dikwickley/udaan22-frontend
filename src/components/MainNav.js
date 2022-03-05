@@ -57,11 +57,11 @@ export default function SimpleBottomNavigation() {
         label="Group"
         icon={<GroupIcon />}
       />
-      {/* <BottomNavigationAction
+      <BottomNavigationAction
         style={{ color:"black" }}
-        label="TV Series"
+        label="Nothing here"
         icon={<TvIcon />}
-      /> */}
+      />
       <BottomNavigationAction
         style={{ color: "black" }}
         label="Search"

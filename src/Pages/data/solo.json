@@ -15,7 +15,7 @@
     "r3": "blind coding",
     "rd3": "a simple code to write with their monitors screen \r\nswitched off and the person who commits minimum \r\nnumber of errors is declared as the winner",
     "rate": "40",
-    "eventImg": "https://via.placeholder.com/600/92c952",
+    "eventImg": "./images/computer/coding chefs.jpg",
     "co1": "NULL",
     "co2": "NULL",
     "venue": "online"
@@ -36,7 +36,7 @@
     "r3": "NULL",
     "rd3": "NULL",
     "rate": "40",
-    "eventImg": "url",
+    "eventImg": "./images/computer/select * from brain.jpg",
     "co1": "NULL",
     "co2": "NULL",
     "venue": "online"
@@ -57,7 +57,7 @@
     "r3": "coding round",
     "rd3": "To test problem solving, logical thinking and coding skills on platforms like HackerEarth / HackerRank. - Time-based evaluation 3 winners to be selected",
     "rate": "40",
-    "eventImg": "url",
+    "eventImg": "./images/computer/Bugs Bunny.jpg",
     "co1": "NULL",
     "co2": "NULL",
     "venue": "online"
@@ -78,7 +78,7 @@
     "r3": "NULL",
     "rd3": "NULL",
     "rate": "20",
-    "eventImg": "url",
+    "eventImg": "./images/electrical/suit up.jpg",
     "co1": "NULL",
     "co2": "NULL",
     "venue": "offline"
@@ -99,7 +99,7 @@
     "r3": "circuit design ",
     "rd3": "Here they will have an input and an output using which they will have to design the circuit",
     "rate": "30",
-    "eventImg": "url",
+    "eventImg": "./images/EL-EC/black circuit box.jpg",
     "co1": "NULL",
     "co2": "NULL",
     "venue": "offline"
@@ -120,7 +120,7 @@
     "r3": "coding round",
     "rd3": "Here they will have to write a basic code for a given problem statement for controllers like Node MCU.",
     "rate": "40",
-    "eventImg": "url",
+    "eventImg": "./images/EL-EC/micro magic.jpg",
     "co1": "NULL",
     "co2": "NULL",
     "venue": "offline"
@@ -130,7 +130,7 @@
     "eventName": "Roadies",
     "description": "NULL",
     "tagline": "roadies banega?",
-    "department": "Non tech",
+    "department": "non tech",
     "noOfRounds": "3",
     "noOfParticipants": "1",
     "type": "non-tech",
@@ -141,7 +141,7 @@
     "r3": "jury-based round",
     "rd3": "This would be a jury-based round. Every challenger now will have to face a panel of three to four judges. Here we would be looking forward to a person who gives the wittiest, humorous yet the most sensible answers",
     "rate": "30",
-    "eventImg": "url",
+    "eventImg": "./images/non-tech/Roadies.jpg",
     "co1": "NULL",
     "co2": "NULL",
     "venue": "offline"
@@ -162,7 +162,7 @@
     "r3": "NULL",
     "rd3": "NULL",
     "rate": "20",
-    "eventImg": "url",
+    "eventImg": "./images/non-tech/big bull.jpg",
     "co1": "NULL",
     "co2": "NULL",
     "venue": "offline"
@@ -183,7 +183,7 @@
     "r3": "NULL",
     "rd3": "NULL",
     "rate": "50,20",
-    "eventImg": "url",
+    "eventImg": "./images/non-tech/Game - o - Lution.jpg",
     "co1": "NULL",
     "co2": "NULL",
     "venue": "offline"
@@ -204,7 +204,7 @@
     "r3": "Surprize round",
     "rd3": "Story Creation / Standup using memes \r\n",
     "rate": "30",
-    "eventImg": "url",
+    "eventImg": "./images/non-tech/Meme - Minati.jpg",
     "co1": "NULL",
     "co2": "NULL",
     "venue": "offline"
@@ -225,7 +225,7 @@
     "r3": "NULL",
     "rd3": "NULL",
     "rate": "10",
-    "eventImg": "url",
+    "eventImg": "./images/non-tech/flash debate.jpg",
     "co1": "NULL",
     "co2": "NULL",
     "venue": "offline"
@@ -246,7 +246,7 @@
     "r3": "Designing round",
     "rd3": "NFT based designing",
     "rate": "30",
-    "eventImg": "url",
+    "eventImg": "./images/non-tech/strangers design.jpg",
     "co1": "NULL",
     "co2": "NULL",
     "venue": "offline"
@@ -267,7 +267,7 @@
     "r3": "NULL",
     "rd3": "NULL",
     "rate": "30",
-    "eventImg": "url",
+    "eventImg": "./images/cultural committee/the flash.jpg",
     "co1": "Dhruvil Shah",
     "co2": "Jay Solanki",
     "venue": "offline"
@@ -288,7 +288,7 @@
     "r3": "NULL",
     "rd3": "NULL",
     "rate": "20",
-    "eventImg": "url",
+    "eventImg": "./images/cultural committee/Improv Battle.jpg",
     "co1": "Nawaaz Basha",
     "co2": "Aditya Pandey",
     "venue": "offline"
