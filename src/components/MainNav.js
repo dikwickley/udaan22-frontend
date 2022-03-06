@@ -32,7 +32,7 @@ export default function SimpleBottomNavigation() {
     } else if (value === 1) {
       history.push("/movies");
     } else if (value === 2) {
-      history.push("/series");
+      history.push("/workshop");
     } else if (value === 3) {
       history.push("/search");
     }
@@ -48,22 +48,22 @@ export default function SimpleBottomNavigation() {
       className={classes.root}
     >
       <BottomNavigationAction
-        style={{ color: "black" }}
+        style={{ color: "white" }}
         label="Solo"
         icon={<PersonIcon />}
       />
       <BottomNavigationAction
-        style={{ color: "black" }}
+        style={{ color: "white" }}
         label="Group"
         icon={<GroupIcon />}
       />
       <BottomNavigationAction
-        style={{ color:"black" }}
-        label="Nothing here"
+        style={{ color:"white" }}
+        label="Workshop"
         icon={<TvIcon />}
       />
       <BottomNavigationAction
-        style={{ color: "black" }}
+        style={{ color: "white" }}
         label="Search"
         icon={<SearchIcon />}
       />
