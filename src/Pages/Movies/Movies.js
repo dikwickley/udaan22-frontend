@@ -77,6 +77,7 @@ const Movies = () => {
                   vote_average={c.vote_average}
             />
           ))}
+        {filteredstate && filterData.length==0 && (<div>No events</div>)}
       </div>
     </div>
   );

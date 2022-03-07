@@ -69,36 +69,40 @@ const Genres = ({
       {
         id: 2,
         name: "non tech",
+        title: 'Non Tech'
       },
       {
         id: 3,
         name: "computer IT",
+        title: "CS/IT"
       },
 
      
       {
         id: 5,
         name: "Mech Production ",
+        title: "Mech & Prod"
       },
       {
         id: 7,
         name: "cultural",
+        title: "Cultural"
       },
-      {
-        id: 6,
-        name: "Production",
-      },
+      
       {
         id: 8,
         name: "civil",
+        title: "Civil"
       },
       {
         id: 9,
         name: "EL EC",
+        title: "EL & EC"
       },
       {
         id: 10,
         name: "electrical",
+        title: "Electrical"
       },
     ]);
   };
@@ -108,12 +112,12 @@ const Genres = ({
 
   return (
     
-    <div style={{ padding: "6px 0",color:"black", }}>
-      Filter By :
+    <div style={{ padding: "6px 0",color:"black", display:'flex', justifyContent: 'center' }}>
+
       {selectedGenres.map((genre) => (
         <Chip
           style={{ margin: 4, width: "100px" }}
-          label={genre.name}
+          label={genre.title}
           key={genre.id}
           color="primary"
           clickable
@@ -124,7 +128,7 @@ const Genres = ({
       {genres.map((genre) => (
         <Chip
           style={{ margin: 4, width: "100px" }}
-          label={genre.name}
+          label={genre.title}
           key={genre.id}
           clickable
           size="small"
