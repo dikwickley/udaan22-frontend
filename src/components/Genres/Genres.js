@@ -80,7 +80,7 @@ const Genres = ({
      
       {
         id: 5,
-        name: "Mech Production ",
+        name: "Mech Production",
         title: "Mech & Prod"
       },
       {
