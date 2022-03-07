@@ -1,9 +1,9 @@
 import React from 'react'
-
+import './work.css';
 function Workshop() {
   return (
-    <div className='text-center text-white'>
-        <h1 className='mt-2'>Coming soon...</h1>
+    <div className='text-center text-white M'>
+        <h1 className='m-5'>Coming soon...</h1>
     </div>
   )
 }

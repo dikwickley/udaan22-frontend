@@ -86,7 +86,7 @@ const Search = () => {
               data={c}
               key={c.id}
               id={c.id}
-              poster={c.eventImg}
+              poster={`./images/${c.department}/${c.eventName}.jpg`}
               title={c.eventName || c.name}
               date={c.first_air_date || c.release_date}
               media_type={c.type}
@@ -96,7 +96,7 @@ const Search = () => {
           ))}
         {searchText &&
           !content &&
-          (type ? <h2>No Series Found</h2> : <h2>No Movies Found</h2>)}
+          (type ? <h2>No Data Found</h2> : <h2>No Data Found</h2>)}
       </div>
       {numOfPages > 1 && (
         <CustomPagination setPage={setPage} numOfPages={numOfPages} />

@@ -12,10 +12,12 @@ const Genres = ({
   setFiltredData,
   filterData,
 }) => {
+
+
   const handleAdd = (genre) => {
     console.log(genre);
     setSelectedGenres(() => {
-      return [...selectedGenres, genre];
+      return [...selectedGenres, genre]; 
     });
     setGenres(genres.filter((g) => g.id !== genre.id));
     setFiltredstate(true);
@@ -27,6 +29,7 @@ const Genres = ({
           filtereddata.push(c);
       });
     });
+    filtereddata.sort();
     setFiltredData(filtereddata);
   };
 
@@ -37,23 +40,24 @@ const Genres = ({
     setGenres([...genres, genre]);
     // this is added new
     setFiltredstate(true);
-    setFiltredData(
-      filterData.filter((c) => {
-        let dep = c.department.split("-");
-        let flag = false;
-        console.log("newitem");
-        dep.forEach((item) => {
-          if (item === genre.name) {
-          } else if (
-            selectedGenres.find((g) => g.name === item) !== undefined
-          ) {
-            console.log(item);
-            flag = true;
-          }
-        });
-        return flag;
-      })
-    );
+    const filtereddata = filterData
+                            .filter((c) => {
+                            let dep = c.department.split("-");
+                            let flag = false;
+                            console.log("newitem");
+                            dep.forEach((item) => {
+                              if (item === genre.name) {
+                              } else if (
+                                selectedGenres.find((g) => g.name === item) !== undefined
+                              ) {
+                                console.log(item);
+                                flag = true;
+                              }
+                            });
+                            return flag;
+                          })
+    filtereddata.sort();
+    setFiltredData(filtereddata);
     if (selectedGenres.length === 1) {
       setFiltredstate(false);
       setFiltredData([]);
@@ -64,23 +68,21 @@ const Genres = ({
     setGenres([
       {
         id: 2,
-        name: "Non tech",
+        name: "non tech",
       },
       {
         id: 3,
-        name: "Computer",
+        name: "computer IT",
       },
-      {
-        id: 4,
-        name: "It",
-      },
+
+     
       {
         id: 5,
-        name: "Mech",
+        name: "Mech Production ",
       },
       {
         id: 7,
-        name: "Cultural",
+        name: "cultural",
       },
       {
         id: 6,
@@ -88,15 +90,15 @@ const Genres = ({
       },
       {
         id: 8,
-        name: "Civil",
+        name: "civil",
       },
       {
         id: 9,
-        name: "EL",
+        name: "EL EC",
       },
       {
         id: 10,
-        name: "EC",
+        name: "electrical",
       },
     ]);
   };
@@ -105,31 +107,31 @@ const Genres = ({
   }, []);
 
   return (
-    <div></div>
-    // <div style={{ padding: "6px 0",color:"black" }}>
-    //   Filter By :
-    //   {selectedGenres.map((genre) => (
-    //     <Chip
-    //       style={{ margin: 2 }}
-    //       label={genre.name}
-    //       key={genre.id}
-    //       color="primary"
-    //       clickable
-    //       size="small"
-    //       onDelete={() => handleRemove(genre)}
-    //     />
-    //   ))}
-    //   {genres.map((genre) => (
-    //     <Chip
-    //       style={{ margin: 2 }}
-    //       label={genre.name}
-    //       key={genre.id}
-    //       clickable
-    //       size="small"
-    //       onClick={() => handleAdd(genre)}
-    //     />
-    //   ))}
-    // </div>
+    
+    <div style={{ padding: "6px 0",color:"black", }}>
+      Filter By :
+      {selectedGenres.map((genre) => (
+        <Chip
+          style={{ margin: 4, width: "100px" }}
+          label={genre.name}
+          key={genre.id}
+          color="primary"
+          clickable
+          size="small"
+          onDelete={() => handleRemove(genre)}
+        />
+      ))}
+      {genres.map((genre) => (
+        <Chip
+          style={{ margin: 4, width: "100px" }}
+          label={genre.name}
+          key={genre.id}
+          clickable
+          size="small"
+          onClick={() => handleAdd(genre)}
+        />
+      ))}
+    </div>
   );
 };
 

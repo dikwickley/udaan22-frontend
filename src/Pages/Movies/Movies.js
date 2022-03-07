@@ -13,6 +13,7 @@ const Movies = () => {
   const [page, setPage] = useState(1);
   // new
   const [ filteredstate, setFiltredstate ] = useState(false);
+  const [filterParams, setFilterParams] = useState([]);
   const [numOfPages, setNumOfPages] = useState();
   const genreforURL = useGenre(selectedGenres);
   // new
@@ -22,12 +23,16 @@ const Movies = () => {
     window.scroll(0, 0);
   },[]);
   console.log(convertjson)
+
+
+
   return (
     <div>
       <div className="pageTitle">
           <span style={{color:"#8B0000"}} >GROUP </span>
           <span style={{color:"rgb(63, 48, 113)"}} > EVENTS</span>
       </div>
+
      
       <Genres
         type="movie"
@@ -50,10 +55,7 @@ const Movies = () => {
                 data={c}
                 key={c.id}
                 id={c.id}
-                poster={c.eventImg}
-               
-                
-                
+                poster={`./images/${c.department}/${c.eventName}.jpg`}
                 title={c.eventName || c.name}
                 date={c.first_air_date || c.release_date}
                 media_type={c.type}
@@ -67,7 +69,7 @@ const Movies = () => {
                   data={c}
                   key={c.id}
                   id={c.id}
-                  poster={c.eventImg}
+                  poster={`./images/${c.department}/${c.eventName}.jpg`}
                   title={c.eventName || c.name}
                   date={c.first_air_date || c.release_date}
                   media_type={c.type}

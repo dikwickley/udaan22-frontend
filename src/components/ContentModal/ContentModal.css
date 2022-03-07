@@ -105,21 +105,42 @@
 }
 
 .scrollar{
-  max-height: 300px;
+  max-height: 550px;
   overflow: auto;
 }
 .event{
   width: 90vw;
-  display: flex;
+  /* display: flex; */
   justify-content:center;
   flex-wrap: wrap;
   padding:10px;
+  background-color: aliceblue;
 }
 .event-img{
   margin: 25px;
 }
 .event-description{
-  width: 50%;
-  min-width:300px;
-  margin: 25px;
+  /* width: 50%; */
+  /* min-width:300px; */
+  margin: 20px;
+}
+
+.closebtn{
+  color:#E50914;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content:flex-end;
+  /* align-items: center; */
+
+}
+
+.heads{
+  color: #E50914;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.content{
+  text-transform: capitalize;
 }

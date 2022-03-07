@@ -73,7 +73,7 @@ const Movies = () => {
                 data={c}               
                 key={c.id}
                 id={c.id}
-                poster={c.eventImg}
+                poster={`./images/${c.department}/${c.eventName}.jpg`}
                 title={c.eventName || c.name}
                 date={c.first_air_date || c.release_date}
                 media_type={c.type}
@@ -87,7 +87,7 @@ const Movies = () => {
                   data={c}
                   key={c.id}
                   id={c.id}
-                  poster={c.eventImg}
+                  poster={`./images/${c.department}/${c.eventName}.jpg`}
                   title={c.eventName || c.name}
                   date={c.first_air_date || c.release_date}
                   media_type={c.type}

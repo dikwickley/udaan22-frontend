@@ -6,14 +6,14 @@
           "tagline": "‘Link to the Linkage’",
           "noOfRounds": "3",
           "noOfParticipants": "2",
-          "department": "Mech-Production",
+          "department": "Mech Production",
           "type": "tech",
           "r1": "quiz",
           "r2": "treasurehunt",
           "r3": "Construct",
           "rate": "35",
           "venue": "C block",
-          "eventImg": "./images/Mech-Production/Caza El Enlace.jpg",
+          "eventImg": "./images/Mech Production/Caza El Enlace.jpg",
           "co1": "abc",
           "co2": "pqr"
       },
@@ -24,14 +24,14 @@
           "tagline": "‘Sell to sail’",
           "noOfRounds": "3",
           "noOfParticipants": "2,3",
-          "department": "Mech-Production",
+          "department": "Mech Production",
           "type": "tech",
           "r1": "Product-Presentation",
           "r2": "Product-Making",
           "r3": "Product-Marketing",
           "rate": "35",
           "venue": "C block-Auditorium",
-          "eventImg": "./images/Mech-Production/Mecha Pitchers.jpg",
+          "eventImg": "./images/Mech Production/Mecha Pitchers.jpg",
           "co1": "abc",
           "co2": "pqr"
       },
@@ -42,14 +42,14 @@
           "tagline": "‘Moving made simple’",
           "noOfRounds": "3",
           "noOfParticipants": "2,3",
-          "department": "Mech-Producion",
+          "department": "Mech Production",
           "type": "tech",
           "r1": "Logistics",
           "r2": "Routing",
           "r3": "Warehousing",
           "rate": "35",
           "venue": "C block-CAD Lab",
-          "eventImg": "./images/Mech-Production/Mecha-Voyage.jpg"
+          "eventImg": "./images/Mech Production/Mecha-Voyage.jpg"
       },
       {
           "Id": "4",
@@ -58,15 +58,36 @@
           "tagline": "Not Available",
           "noOfRounds": "3",
           "noOfParticipants": "2, 3",
-          "department": "Mech-Producion",
+          "department": "Mech Production",
           "type": "tech",
           "r1": "Introduction",
           "r2": "Not Available",
           "r3": "(optional)",
           "rate": "35",
           "venue": "D block-CAD Lab-Workshop",
-          "eventImg": "./images/Mech-Production/Parametric.jpg"
+          "eventImg": "./images/Mech Production/Parametric.jpg"
       },
+      {
+        "Id": "2.1",
+        "eventName": "select everything from brain",
+        "description": "programming",
+        "tagline": "Query Successfully Executed",
+        "department": "computer IT",
+        "noOfRounds": "2",
+        "noOfParticipants": "2",
+        "type": "tech",
+        "r1": "quiz",
+        "rd1": "Basic online quiz with database related questions - 1hr Time should be allotted 25% students to be taken for next round",
+        "r2": "database design",
+        "rd2": "Design Database according to requirement provided by us. - Perform any 3 moderate and 2 advanced queries, as asked by us - Time based evaluation 3 winners to be selected",
+        "r3": "Not Available",
+        "rd3": "Not Available",
+        "rate": "40",
+        "eventImg": "./images/computer IT/select * from brain.jpg",
+        "co1": "Not Available",
+        "co2": "Not Available",
+        "venue": "online"
+    },
       {
           "Id": "5",
           "eventName": "MazoFyyy",
@@ -117,7 +138,7 @@
       },
       {
           "Id": "8",
-          "eventName": "Survey Maestro ",
+          "eventName": "Survey Maestro",
           "description": "This event will completely focus on developing and assessing the participants' knowledge to operate surveying instruments. Participants will be filtered in each round on the basis of their practical knowledge.",
           "tagline": "Not Available",
           "noOfRounds": "3",
@@ -133,7 +154,7 @@
       },
       {
           "Id": "9",
-          "eventName": "ShapeOfBuildingForIndianClimate",
+          "eventName": "Shape Of Building For Indian Climate",
           "description": "The climatic condition will be iven to the participants and on the basis of that they have to think on the shape and materials that will be used in designing of it. ",
           "tagline": "Not Available",
           "noOfRounds": "3",
@@ -170,14 +191,14 @@
           "tagline": "Let's Code & Roll",
           "noOfRounds": "2",
           "noOfParticipants": "2",
-          "department": "computer",
+          "department": "computer IT",
           "type": "tech",
           "r1": "Not Available",
           "r2": "Not Available",
           "r3": "Not Available",
           "rate": "40",
           "venue": "Online",
-          "eventImg": "./images/computer/Spin-e-Web.jpg"
+          "eventImg": "./images/computer IT/Spin-e-Web.jpg"
       },
       {
           "Id": "12",
@@ -192,7 +213,7 @@
           "r2": "Not Available",
           "r3": "Not Available",
           "rate": "50",
-          "venue": "Classroom-computer Lab",
+          "venue": "Classroom-computer IT Lab",
           "eventImg": "./images/electrical/Tinkers Community.jpg"
       },
       {
@@ -240,7 +261,7 @@
           "r2": "Not Available",
           "r3": "Not Available",
           "rate": "60",
-          "venue": "Classroom -computer Lab",
+          "venue": "Classroom -computer IT Lab",
           "eventImg": "./images/electrical/Build your Product.jpg"
       },
       {
@@ -250,14 +271,14 @@
           "tagline": "Just Buy it!!",
           "noOfRounds": "3",
           "noOfParticipants": "2",
-          "department": "EL-EC",
+          "department": "EL EC",
           "type": "tech",
           "r1": "Not Available",
           "r2": "Not Available",
           "r3": "Not Available",
           "rate": "50",
           "venue": "Not Available",
-          "eventImg": "./images/EL-EC/BM.jpg"
+          "eventImg": "./images/EL EC/BM.jpg"
       },
       {
           "Id": "17",
@@ -266,14 +287,14 @@
           "tagline": "The key to your next step is having a clear vision.",
           "noOfRounds": "3",
           "noOfParticipants": "2",
-          "department": "EL-EC",
+          "department": "EL EC",
           "type": "tech",
           "r1": "Not Available",
           "r2": "Not Available",
           "r3": "Not Available",
           "rate": "50",
           "venue": "Not Available",
-          "eventImg": "./images/EL-EC/Puzz-neering.jpg"
+          "eventImg": "./images/EL EC/Puzz-neering.jpg"
       },
       {
           "Id": "18",
@@ -282,14 +303,14 @@
           "tagline": "How far can you go?",
           "noOfRounds": "3",
           "noOfParticipants": "2",
-          "department": "EL-EC",
+          "department": "EL EC",
           "type": "tech",
           "r1": "Not Available",
           "r2": "Not Available",
           "r3": "Not Available",
           "rate": "50",
           "venue": "Not Available",
-          "eventImg": "./images/EL-EC/Robo race.jpg"
+          "eventImg": "./images/EL EC/Robo race.jpg"
       },
       {
           "Id": "19",
@@ -298,14 +319,14 @@
           "tagline": "Paisa hi Paisa hoga!",
           "noOfRounds": "3",
           "noOfParticipants": "2",
-          "department": "non-tech",
-          "type": "non-tech",
+          "department": "non tech",
+          "type": "non tech",
           "r1": "Not Available",
           "r2": "Not Available",
           "r3": "Not Available",
           "rate": "100(50 each)",
           "venue": "Not Available",
-          "eventImg": "./images/non-tech/GURU.jpg"
+          "eventImg": "./images/non tech/GURU.jpg"
       },
       {
           "Id": "20",
@@ -314,30 +335,30 @@
           "tagline": "Aye Aye Cap!!",
           "noOfRounds": "3",
           "noOfParticipants": "2",
-          "department": "Not Available",
-          "type": "non-tech",
+          "department": "non tech",
+          "type": "non tech",
           "r1": "Not Available",
           "r2": "Not Available",
           "r3": "Not Available",
           "rate": "30",
           "venue": "Not Available",
-          "eventImg": "./images/non-tech/Math.jpg"                                                                                                                                                                                          
+          "eventImg": "./images/non tech/Math.jpg"                                                                                                                                                                                          
       },
       {
           "Id": "21",
-          "eventName": "F.R.I.E.N.D.S",
+          "eventName": "F R I E N D S",
           "description": "With fun take some tests with your friend",
           "tagline": "I’ll be there for you!",
           "noOfRounds": "3",
           "noOfParticipants": "2",
-          "department": "non-tech",
-          "type": "non-tech",
+          "department": "non tech",
+          "type": "non tech",
           "r1": "Not Available",
           "r2": "Not Available",
           "r3": "Not Available",
           "rate": "40",
           "venue": "Not Available",
-          "eventImg": "./images/non-tech/friends.jpg"
+          "eventImg": "./images/non tech/friends.jpg"
       },
       {
           "Id": "22",
@@ -346,14 +367,14 @@
           "tagline": "Let’s Dig it out!",
           "noOfRounds": "3",
           "noOfParticipants": "2",
-          "department": "non-tech",
-          "type": "non-tech",
+          "department": "non tech",
+          "type": "non tech",
           "r1": "Not Available",
           "r2": "Not Available",
           "r3": "Not Available",
           "rate": "50",
           "venue": "Not Available",
-          "eventImg": "./images/non-tech/Money Heist.jpg"
+          "eventImg": "./images/non tech/Money Heist.jpg"
       },
       {
           "Id": "23",
@@ -362,14 +383,14 @@
           "tagline": "Netflix & Theatrix!",
           "noOfRounds": "3",
           "noOfParticipants": "3",
-          "department": "non-tech",
-          "type": "non-tech",
+          "department": "non tech",
+          "type": "non tech",
           "r1": "Not Available",
           "r2": "Not Available",
           "r3": "Not Available",
           "rate": "40",
           "venue": "Not Available",
-          "eventImg": "./images/non-tech/Series-E-Magic.jpg"
+          "eventImg": "./images/non tech/Series-E-Magic.jpg"
       },
       {
           "Id": "24",
@@ -378,47 +399,17 @@
           "tagline": "Deal Pakki kare?",
           "noOfRounds": "1",
           "noOfParticipants": "2",
-          "department": "non-tech",
-          "type": "non-tech",
+          "department": "non tech",
+          "type": "non tech",
           "r1": "Not Available",
           "r2": "Not Available",
           "r3": "Not Available",
           "rate": "50",
           "venue": "Not Available",
-          "eventImg": "./images/non-tech/Shark Tank.jpg"
+          "eventImg": "./images/non tech/Shark Tank.jpg"
       },
-      {
-          "Id": "25",
-          "eventName": "Squid Game",
-          "description": "Not Available",
-          "tagline": "Save your lives!",
-          "noOfRounds": "3",
-          "noOfParticipants": "2",
-          "department": "non-tech",
-          "type": "non-tech",
-          "r1": "Not Available",
-          "r2": "Not Available",
-          "r3": "Not Available",
-          "rate": "50",
-          "venue": "Not Available",
-          "eventImg": "./images/non-tech/Squid Game.jpg"
-      },
-      {
-          "Id": "26",
-          "eventName": "Squid Game",
-          "description": "Not Available",
-          "tagline": "Save your lives!",
-          "noOfRounds": "2",
-          "noOfParticipants": "2",
-          "department": "non-tech",
-          "type": "non-tech",
-          "r1": "Not Available",
-          "r2": "Not Available",
-          "r3": "Not Available",
-          "rate": "50",
-          "venue": "Not Available",
-          "eventImg": "./images/non-tech/Squid Game.jpg"
-      },
+     
+     
       {
           "Id": "27",
           "eventName": "Quriosity",
@@ -426,14 +417,14 @@
           "tagline": "BIZZ-TECH Quiz",
           "noOfRounds": "2",
           "noOfParticipants": "2",
-          "department": "cultural committee",
-          "type": "non-tech",
+          "department": "cultural",
+          "type": "non tech",
           "r1": "Not Available",
           "r2": "Not Available",
           "r3": "Not Available",
           "rate": "40",
           "venue": "Not Available",
-          "eventImg": "./images/cultural committee/Quriosity.jpg"
+          "eventImg": "./images/cultural/Quriosity.jpg"
       },
       {
           "Id": "28",
@@ -442,14 +433,14 @@
           "tagline": "Suron ka mela!",
           "noOfRounds": "2",
           "noOfParticipants": "2",
-          "department": "cultural committee",
-          "type": "non-tech",
+          "department": "cultural",
+          "type": "non tech",
           "r1": "Not Available",
           "r2": "Not Available",
           "r3": "Not Available",
           "rate": "40",
           "venue": "Not Available",
-          "eventImg": "./images/cultural committee/antakshri.jpg"
+          "eventImg": "./images/cultural/antakshri.jpg"
 
       },
       {
@@ -459,14 +450,14 @@
           "tagline": "B&W se Colour tak..",
           "noOfRounds": "2",
           "noOfParticipants": "2",
-          "department": "cultural committee",
-          "type": "non-tech",
+          "department": "cultural",
+          "type": "non tech",
           "r1": "Not Available",
           "r2": "Not Available",
           "r3": "Not Available",
           "rate": "40",
           "venue": "Not Available",
-          "eventImg": "./images/cultural committee/Bolly mix Holly.jpg"
+          "eventImg": "./images/cultural/Bolly mix Holly.jpg"
       },
       {
           "Id": "30",
@@ -475,13 +466,13 @@
           "tagline": "Not Available",
           "noOfRounds": "3",
           "noOfParticipants": "2",
-          "department": "cultural committee",
-          "type": "non-tech",
+          "department": "cultural",
+          "type": "non tech",
           "r1": "Not Available",
           "r2": "Not Available",
           "r3": "Not Available",
           "rate": "30",
           "venue": "Not Available",
-          "eventImg": "./images/non-tech/House of Intellects.jpg"
+          "eventImg": "./images/non tech/House of Intellects.jpg"
       }
 ]

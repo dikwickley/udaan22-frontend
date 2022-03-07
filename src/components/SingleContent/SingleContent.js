@@ -8,6 +8,7 @@ const SingleContent = ({
   poster,
   title,
   date,
+  tagline,
   media_type,
   department,
   vote_average,
@@ -27,7 +28,7 @@ const SingleContent = ({
         style={{width:"300px",height:"300px"}}
       />
       <span className="title">{title}</span>
-      <span className="subTitle" >{department}</span>
+      <span className="subTitle" >{data.tagline}</span>
       <span className="subTitle"></span>
     </ContentModal>
   );

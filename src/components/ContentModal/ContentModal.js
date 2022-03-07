@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import "./ContentModal.css";
+import CloseIcon from '@material-ui/icons/Close';
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -58,25 +59,48 @@ export default function TransitionsModal({ children, media_type, id, data }) {
         }}
       >
         <div className="event">
-          <div className="event-img">
-            <img
-              src={data.eventImg}
-              style={{width:"300px",height:"200px"}}
-            />
+          <div onClick={handleClose} className="closebtn">
+          <CloseIcon fontSize="large" />
           </div>
           <div className="event-description">
             <ul class="list-group bg-dark-c scrollar ">
-              <li class="list-group-item  bg-dark-c text-white m-1">Event : {data.eventName}</li>
-              <li class="list-group-item  bg-dark-c text-white m-1">Description : {data.description}</li>
-              <li class="list-group-item  bg-dark-c text-white m-1">Tagline : {data.tagline}</li>
-              <li class="list-group-item  bg-dark-c text-white m-1">No. of Rounds: {data.noOfRounds}</li>
-              <li class="list-group-item  bg-dark-c text-white m-1">Type: {data.type}</li>
+              <li class="list-group-item  bg-dark-c text-white m-1">
+                
+                <span className="heads"> Event : </span>
+              
+               <span className="content"> {data.eventName} </span></li>
+              <li class="list-group-item  bg-dark-c text-white m-1">
+              <span className="heads"> Description : </span>
+              <span className="content">{data.description} </span></li>
+              <li class="list-group-item  bg-dark-c text-white m-1">
+                 <span className="heads"> Tagline : </span>
+                 <span className="content">{data.tagline} </span></li>
+              <li class="list-group-item  bg-dark-c text-white m-1">
+              <span className="heads"> No. of Rounds: </span>
+              <span className="content">{data.noOfRounds} </span></li>
+              <li class="list-group-item  bg-dark-c text-white m-1">
+              <span className="heads"> Type : </span>
+                
+              <span className="content">{data.type} </span></li>
 
-              <li class="list-group-item  bg-dark-c text-white m-1">No. of Participants : {data.noOfParticipants}</li>
-              <li class="list-group-item  bg-dark-c text-white m-1">Round 1 : {data.rd1}</li>
-              <li class="list-group-item  bg-dark-c text-white m-1">Round 2 : {data.rd2}</li>
-              <li class="list-group-item  bg-dark-c text-white m-1">Round 3: {data.rd3}</li>
-              <li class="list-group-item  bg-dark-c text-white m-1">Rate: {data.rate} Rupees</li>
+              <li class="list-group-item  bg-dark-c text-white m-1">
+              <span className="heads"> Participants per team : </span>
+              <span className="content">{data.noOfParticipants} </span></li>
+              <li class="list-group-item  bg-dark-c text-white m-1">
+              <span className="heads"> Venue : </span>
+              <span className="content">{data.venue} </span></li>
+              <li class="list-group-item  bg-dark-c text-white m-1">
+              <span className="heads"> Round 1 : </span>
+              <span className="content">{data.rd1 ? data.rd1 : "Not Available"} </span></li>
+              <li class="list-group-item  bg-dark-c text-white m-1"> 
+              <span className="heads"> Round 2 : </span>
+              <span className="content">{data.rd2 ? data.rd2 : "Not Available"} </span></li>
+              <li class="list-group-item  bg-dark-c text-white m-1"> 
+              <span className="heads"> Round 3 : </span>
+              <span className="content">{data.rd3 ? data.rd3 : "Not Available"} </span></li>
+              <li class="list-group-item  bg-dark-c text-white m-1">
+              <span className="heads"> Price : </span>
+              <span className="content">{data.rate}/- Rupees Only </span></li>
             </ul>
           </div>
           

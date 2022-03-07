@@ -30,7 +30,7 @@ export default function SimpleBottomNavigation() {
     if (value === 0) {
       history.push("/");
     } else if (value === 1) {
-      history.push("/movies");
+      history.push("/groupEvents");
     } else if (value === 2) {
       history.push("/workshop");
     } else if (value === 3) {

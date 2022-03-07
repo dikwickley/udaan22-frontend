@@ -21,7 +21,10 @@
   display: flex;
   justify-content: center;
 }
-
+.M{
+  display: flex;
+  justify-content:center;
+  }
 @media (max-width: 1000px) {
   .pageTitle {
     font-size: 6.4vw;

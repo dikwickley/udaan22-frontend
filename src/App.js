@@ -18,7 +18,7 @@ function App() {
         <Container>
           <Switch>
             <Route path="/" component={Trending} exact />
-            <Route path="/movies" component={Movies} />
+            <Route path="/groupEvents" component={Movies} />
             <Route path="/workshop" component={Workshop} />
             <Route path="/search" component={Search} />
           </Switch>
