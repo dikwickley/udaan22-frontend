@@ -105,11 +105,10 @@ const Genres = ({
   }, []);
 
   return (
-<<<<<<< HEAD
-    <center>
-    <div >
 
-=======
+    <center>
+
+
     <div
       style={{
         padding: "6px 0",
@@ -119,7 +118,7 @@ const Genres = ({
         flexWrap: "wrap",
       }}
     >
->>>>>>> cc90b03ac2ac0d87a0951a9fdf0d6a8bd53cc184
+
       {selectedGenres.map((genre) => (
         <Chip
           style={{ margin: 4, width: "100px" }}
