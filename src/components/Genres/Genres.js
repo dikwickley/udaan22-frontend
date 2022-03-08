@@ -12,12 +12,10 @@ const Genres = ({
   setFiltredData,
   filterData,
 }) => {
-
-
   const handleAdd = (genre) => {
     console.log(genre);
     setSelectedGenres(() => {
-      return [...selectedGenres, genre]; 
+      return [...selectedGenres, genre];
     });
     setGenres(genres.filter((g) => g.id !== genre.id));
     setFiltredstate(true);
@@ -40,22 +38,19 @@ const Genres = ({
     setGenres([...genres, genre]);
     // this is added new
     setFiltredstate(true);
-    const filtereddata = filterData
-                            .filter((c) => {
-                            let dep = c.department.split("-");
-                            let flag = false;
-                            console.log("newitem");
-                            dep.forEach((item) => {
-                              if (item === genre.name) {
-                              } else if (
-                                selectedGenres.find((g) => g.name === item) !== undefined
-                              ) {
-                                console.log(item);
-                                flag = true;
-                              }
-                            });
-                            return flag;
-                          })
+    const filtereddata = filterData.filter((c) => {
+      let dep = c.department.split("-");
+      let flag = false;
+      console.log("newitem");
+      dep.forEach((item) => {
+        if (item === genre.name) {
+        } else if (selectedGenres.find((g) => g.name === item) !== undefined) {
+          console.log(item);
+          flag = true;
+        }
+      });
+      return flag;
+    });
     filtereddata.sort();
     setFiltredData(filtereddata);
     if (selectedGenres.length === 1) {
@@ -69,40 +64,39 @@ const Genres = ({
       {
         id: 2,
         name: "non tech",
-        title: 'Non Tech'
+        title: "Non Tech",
       },
       {
         id: 3,
         name: "computer IT",
-        title: "CS/IT"
+        title: "CS/IT",
       },
 
-     
       {
         id: 5,
         name: "Mech Production",
-        title: "Mech & Prod"
+        title: "Mech & Prod",
       },
       {
         id: 7,
         name: "cultural",
-        title: "Cultural"
+        title: "Cultural",
       },
-      
+
       {
         id: 8,
         name: "civil",
-        title: "Civil"
+        title: "Civil",
       },
       {
         id: 9,
         name: "EL EC",
-        title: "EL & EC"
+        title: "EL & EC",
       },
       {
         id: 10,
         name: "electrical",
-        title: "Electrical"
+        title: "Electrical",
       },
     ]);
   };
@@ -111,9 +105,15 @@ const Genres = ({
   }, []);
 
   return (
-    
-    <div style={{ padding: "6px 0",color:"black", display:'flex', justifyContent: 'center' }}>
-
+    <div
+      style={{
+        padding: "6px 0",
+        color: "black",
+        display: "flex",
+        justifyContent: "center",
+        flexWrap: "wrap",
+      }}
+    >
       {selectedGenres.map((genre) => (
         <Chip
           style={{ margin: 4, width: "100px" }}
