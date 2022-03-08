@@ -111,8 +111,8 @@ const Genres = ({
   }, []);
 
   return (
-    
-    <div style={{ padding: "6px 0",color:"black", display:'flex', justifyContent: 'center' }}>
+    <center>
+    <div >
 
       {selectedGenres.map((genre) => (
         <Chip
@@ -135,7 +135,7 @@ const Genres = ({
           onClick={() => handleAdd(genre)}
         />
       ))}
-    </div>
+    </div></center>
   );
 };
 

@@ -103,7 +103,7 @@ export default function TransitionsModal({ children, media_type, id, data }) {
               <span className="content">{data.rate}/- Rupees Only </span></li>
             </ul>
           </div>
-          
+          *Reach out to our publicity desks for more information.
         </div>
         {/* <div class="modal-content">
           <div class="modal-img">
