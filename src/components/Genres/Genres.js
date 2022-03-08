@@ -85,7 +85,7 @@ const Genres = ({
 
       {
         id: 8,
-        name: "civil",
+        name: "Civil",
         title: "Civil",
       },
       {
