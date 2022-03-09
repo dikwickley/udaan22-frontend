@@ -12,8 +12,9 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import CustomPagination from "../../components/Pagination/CustomPagination";
 import SingleContent from "../../components/SingleContent/SingleContent";
-import soloData from "../data/solo.json";
-import groupData from "../data/group.json";
+import soloData from "../data/udaan-solo.json";
+// import groupData from "../data/group.json";
+import groupData from "../data/udaan-group.json";
 import '../container.css'
 
 
@@ -83,16 +84,13 @@ const Search = () => {
         {content &&
           content.map((c) => (
             <SingleContent
-              data={c}
-              key={c.id}
-              id={c.id}
-              poster={`./images/${c.department}/${c.eventName}.jpg`}
-              title={c.eventName || c.name}
-              date={c.first_air_date || c.release_date}
-              media_type={c.type}
-              department={c.department}
-              vote_average={c.vote_average}
-            />
+            data={c}
+            key={c.id}
+            id={c.id}
+            poster={c.url}
+            title={c.eventName || c.name}
+            department={c.department}
+        />
           ))}
         {searchText &&
           !content &&

@@ -69,38 +69,28 @@ export default function TransitionsModal({ children, media_type, id, data }) {
                 <span className="heads"> Event : </span>
               
                <span className="content"> {data.eventName} </span></li>
-              <li class="list-group-item  bg-dark-c text-white m-1">
-              <span className="heads"> Description : </span>
-              <span className="content">{data.description} </span></li>
+
               <li class="list-group-item  bg-dark-c text-white m-1">
                  <span className="heads"> Tagline : </span>
-                 <span className="content">{data.tagline} </span></li>
-              <li class="list-group-item  bg-dark-c text-white m-1">
-              <span className="heads"> No. of Rounds: </span>
-              <span className="content">{data.noOfRounds} </span></li>
-              <li class="list-group-item  bg-dark-c text-white m-1">
-              <span className="heads"> Type : </span>
-                
-              <span className="content">{data.type} </span></li>
+                 <span className="content">{data.tagLine} </span></li>
+
 
               <li class="list-group-item  bg-dark-c text-white m-1">
               <span className="heads"> Participants per team : </span>
               <span className="content">{data.noOfParticipants} </span></li>
-              <li class="list-group-item  bg-dark-c text-white m-1">
-              <span className="heads"> Venue : </span>
-              <span className="content">{data.venue} </span></li>
+
               <li class="list-group-item  bg-dark-c text-white m-1">
               <span className="heads"> Round 1 : </span>
-              <span className="content">{data.rd1 ? data.rd1 : "Not Available"} </span></li>
+              <span className="content">{data.round1 ? data.round1 : "Not Available"} </span></li>
               <li class="list-group-item  bg-dark-c text-white m-1"> 
               <span className="heads"> Round 2 : </span>
-              <span className="content">{data.rd2 ? data.rd2 : "Not Available"} </span></li>
+              <span className="content">{data.round2 ? data.round2 : "Not Available"} </span></li>
               <li class="list-group-item  bg-dark-c text-white m-1"> 
               <span className="heads"> Round 3 : </span>
-              <span className="content">{data.rd3 ? data.rd3 : "Not Available"} </span></li>
+              <span className="content">{data.round3 ? data.round3 : "Not Available"} </span></li>
               <li class="list-group-item  bg-dark-c text-white m-1">
               <span className="heads"> Price : </span>
-              <span className="content">{data.rate}/- Rupees Only </span></li>
+              <span className="content">{data.fees}</span></li>
             </ul>
           </div>
           *Reach out to our publicity desks for more information.

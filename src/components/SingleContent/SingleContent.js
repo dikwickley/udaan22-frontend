@@ -28,7 +28,7 @@ const SingleContent = ({
         style={{width:"300px",height:"300px"}}
       />
       <span className="title">{title}</span>
-      <span className="subTitle" >{data.tagline}</span>
+      <span className="subTitle" >{data.tagLine}</span>
       <span className="subTitle"></span>
     </ContentModal>
   );

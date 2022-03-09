@@ -34,7 +34,7 @@ import { useEffect, useState } from "react";
 import Genres from "../../components/Genres/Genres";
 import SingleContent from "../../components/SingleContent/SingleContent";
 import useGenre from "../../hooks/useGenre";
-import convertjson from  "../data/solo.json";
+import convertjson from "../data/udaan-solo.json";
 import '../container.css'
 const Movies = () => {
   const [genres, setGenres] = useState([]);
@@ -70,30 +70,24 @@ const Movies = () => {
         {convertjson && !filteredstate &&
           convertjson.map((c) => {
             return <SingleContent
-                data={c}               
-                key={c.id}
-                id={c.id}
-                poster={`./images/${c.department}/${c.eventName}.jpg`}
-                title={c.eventName || c.name}
-                date={c.first_air_date || c.release_date}
-                media_type={c.type}
-                department={c.department}
-                vote_average={c.vote_average}
-            />
+            data={c}
+            key={c.id}
+            id={c.id}
+            poster={c.url}
+            title={c.eventName || c.name}
+            department={c.department}
+        />
         })}
         {filteredstate &&
           filterData.map((c) => (
             <SingleContent
-                  data={c}
-                  key={c.id}
-                  id={c.id}
-                  poster={`./images/${c.department}/${c.eventName}.jpg`}
-                  title={c.eventName || c.name}
-                  date={c.first_air_date || c.release_date}
-                  media_type={c.type}
-                  department={c.department}
-                  vote_average={c.vote_average}
-            />
+            data={c}
+            key={c.id}
+            id={c.id}
+            poster={c.url}
+            title={c.eventName || c.name}
+            department={c.department}
+        />
           ))}
       </div>
     </div>
