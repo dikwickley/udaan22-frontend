@@ -63,23 +63,23 @@ const Genres = ({
     setGenres([
       {
         id: 2,
-        name: "non tech",
+        name: "Non Tech",
         title: "Non Tech",
       },
       {
         id: 3,
-        name: "computer IT",
+        name: "CP/IT",
         title: "CS/IT",
       },
 
       {
         id: 5,
-        name: "Mech Production",
+        name: "Mech & Prod",
         title: "Mech & Prod",
       },
       {
         id: 7,
-        name: "cultural",
+        name: "Cultural",
         title: "Cultural",
       },
 
@@ -95,7 +95,7 @@ const Genres = ({
       },
       {
         id: 10,
-        name: "electrical",
+        name: "Electrical",
         title: "Electrical",
       },
     ]);
