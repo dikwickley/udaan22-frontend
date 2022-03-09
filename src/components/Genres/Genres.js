@@ -105,42 +105,39 @@ const Genres = ({
   }, []);
 
   return (
-
     <center>
-
-
-    <div
-      style={{
-        padding: "6px 0",
-        color: "black",
-        display: "flex",
-        justifyContent: "center",
-        flexWrap: "wrap",
-      }}
-    >
-
-      {selectedGenres.map((genre) => (
-        <Chip
-          style={{ margin: 4, width: "100px" }}
-          label={genre.title}
-          key={genre.id}
-          color="primary"
-          clickable
-          size="small"
-          onDelete={() => handleRemove(genre)}
-        />
-      ))}
-      {genres.map((genre) => (
-        <Chip
-          style={{ margin: 4, width: "100px" }}
-          label={genre.title}
-          key={genre.id}
-          clickable
-          size="small"
-          onClick={() => handleAdd(genre)}
-        />
-      ))}
-    </div></center>
+      <div
+        style={{
+          padding: "6px 0",
+          color: "black",
+          display: "flex",
+          justifyContent: "center",
+          flexWrap: "wrap",
+        }}
+      >
+        {selectedGenres.map((genre) => (
+          <Chip
+            style={{ margin: 4, width: "100px" }}
+            label={genre.title}
+            key={genre.id}
+            color="primary"
+            clickable
+            size="small"
+            onDelete={() => handleRemove(genre)}
+          />
+        ))}
+        {genres.map((genre) => (
+          <Chip
+            style={{ margin: 4, width: "100px" }}
+            label={genre.title}
+            key={genre.id}
+            clickable
+            size="small"
+            onClick={() => handleAdd(genre)}
+          />
+        ))}
+      </div>
+    </center>
   );
 };
 

@@ -1,7 +1,7 @@
 [
   {
-    "Id": "1",  
-    "eventName": "coding chefs", 
+    "Id": "1",
+    "eventName": "Coding Chefs",
     "description": "basic c/c++ coding",
     "tagline": "chef is cooking some delicious code",
     "department": "computer IT",
@@ -19,8 +19,8 @@
     "co1": "Not Available",
     "co2": "Not Available",
     "venue": "online"
-},
-{
+  },
+  {
     "Id": "25.2",
     "eventName": "Squid Game",
     "description": "Not Available",
@@ -35,8 +35,8 @@
     "rate": "50",
     "venue": "Not Available",
     "eventImg": "./images/non tech/Squid Game.jpg"
-},
-{
+  },
+  {
     "Id": "3",
     "eventName": "Bugs Bunny",
     "description": "coding related challege",
@@ -56,10 +56,10 @@
     "co1": "Not Available",
     "co2": "Not Available",
     "venue": "online"
-},
-{
+  },
+  {
     "Id": "4",
-    "eventName": "suit up",
+    "eventName": "Suit Up",
     "description": "Not Available",
     "tagline": "engineers in making",
     "department": "electrical",
@@ -77,10 +77,10 @@
     "co1": "Not Available",
     "co2": "Not Available",
     "venue": "offline"
-},
-{
+  },
+  {
     "Id": "5",
-    "eventName": "black circuit box",
+    "eventName": "Black Circuit Box",
     "description": "Not Available",
     "tagline": "can you reveal the black box?",
     "department": "EL EC",
@@ -98,10 +98,10 @@
     "co1": "Not Available",
     "co2": "Not Available",
     "venue": "offline"
-},
-{
+  },
+  {
     "Id": "6",
-    "eventName": "micro magic",
+    "eventName": "Micro Magic",
     "description": "Not Available",
     "tagline": "modern problems need modern solution",
     "department": "EL EC",
@@ -119,8 +119,8 @@
     "co1": "Not Available",
     "co2": "Not Available",
     "venue": "offline"
-},
-{
+  },
+  {
     "Id": "7",
     "eventName": "Roadies",
     "description": "Not Available",
@@ -140,8 +140,8 @@
     "co1": "Not Available",
     "co2": "Not Available",
     "venue": "offline"
-},
-{
+  },
+  {
     "Id": "8",
     "eventName": "big bull",
     "description": "Not Available",
@@ -161,29 +161,8 @@
     "co1": "Not Available",
     "co2": "Not Available",
     "venue": "offline"
-},
-{
-    "Id": "9",
-    "eventName": "Game - o - Lution",
-    "description": "Not Available",
-    "tagline": "Keep calm and blame it on the lag",
-    "department": "non tech",
-    "noOfRounds": "1",
-    "noOfParticipants": "1",
-    "type": "non tech",
-    "r1": "game",
-    "rd1": "BGMI – Every Team will play two matches  Valorant – Knockout Rounds",
-    "r2": "Not Available",
-    "rd2": "Not Available",
-    "r3": "Not Available",
-    "rd3": "Not Available",
-    "rate": "50,20",
-    "eventImg": "./images/non tech/Game - o - Lution.jpg",
-    "co1": "Not Available",
-    "co2": "Not Available",
-    "venue": "offline"
-},
-{
+  },
+  {
     "Id": "10",
     "eventName": "Meme - Minati",
     "description": "Not Available",
@@ -203,10 +182,10 @@
     "co1": "Not Available",
     "co2": "Not Available",
     "venue": "offline"
-},
-{
+  },
+  {
     "Id": "11",
-    "eventName": "flash debate",
+    "eventName": "Flash Debate",
     "description": "Not Available",
     "tagline": "BVM wants to know!",
     "department": "non tech",
@@ -224,10 +203,10 @@
     "co1": "Not Available",
     "co2": "Not Available",
     "venue": "offline"
-},
-{
+  },
+  {
     "Id": "12",
-    "eventName": "strangers design",
+    "eventName": "Strangers Design",
     "description": "Not Available",
     "tagline": "to be designed!",
     "department": "non tech",
@@ -245,29 +224,8 @@
     "co1": "Not Available",
     "co2": "Not Available",
     "venue": "offline"
-},
-{
-    "Id": "13",
-    "eventName": "the flash",
-    "description": "Not Available",
-    "tagline": "capture the moments",
-    "department": "cultural",
-    "noOfRounds": "2",
-    "noOfParticipants": "1",
-    "type": "non tech",
-    "r1": "reel creation",
-    "rd1": "Create a mini vlog reel of footage covered inside the college on the 1st and 2nd day of Udaan",
-    "r2": "photography",
-    "rd2": "Live photography where participants will have to capture pictures on the provided theme within 3-4 hours",
-    "r3": "Not Available",
-    "rd3": "Not Available",
-    "rate": "30",
-    "eventImg": "./images/cultural/the flash.jpg",
-    "co1": "Dhruvil Shah",
-    "co2": "Jay Solanki",
-    "venue": "offline"
-},
-{
+  },
+  {
     "Id": "14",
     "eventName": "Improv Battle",
     "description": "Not Available",
@@ -287,5 +245,5 @@
     "co1": "Nawaaz Basha",
     "co2": "Aditya Pandey",
     "venue": "offline"
-}
+  }
 ]
